@@ -1,0 +1,39 @@
+[package]
+name = "enum-other"
+version = "0.1.0"
+authors = ["vivi <me@vivi.zone>"]
+edition = "2021"
+description = "Attribute macro to add an 'other' value for enums with discriminators."
+documentation = "https://docs.rs/enum-other"
+homepage = "https://github.com/vivisrc/enum-other"
+repository = "https://github.com/vivisrc/enum-other"
+license = "BSD-3-Clause"
+keywords = ["enum", "other"]
+categories = ["rust-patterns"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0"
+syn = { version = "1.0", features = ["full"] }
+
+[[example]]
+name = "simple"
+test = true
+
+[[example]]
+name = "tuple"
+test = true
+
+[[example]]
+name = "string"
+test = true
+
+[[example]]
+name = "custom_other_ident"
+test = true
+
+[[example]]
+name = "omit_discriminant"
+test = true
